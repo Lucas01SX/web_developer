@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag img</title>
+</head>
+
+<body>
+
+    <!-- Sobre a tag img:
+    
+        Tag usada para inserir uma imagem na página.
+        A tag não possui conteúdo.
+        Os atributos src e alt são obrigatórios.
+
+        alt -> Define um texto alternativo para a imagem. -> Texto
+        
+        crossorigin -> Define como o elemento lida com solicitações de origem cruzada. -> anonumous, use-credentials
+
+        height -> Define a altura da imagem. -> Número
+
+        ismap -> Define a imagem como um mapa de imagem do lado do servidor. -> ismap
+
+        longdesc -> Define uma descrição detalhada da imagem. -> #idDaDescricao
+
+        sizes -> Define tamanhos alternativos da imagem. 
+
+        src -> Define qual a fonte/link da imagem. -> URL
+
+        srcset -> Define a URL da imagem em diferentes situações. -> URL
+
+        usemap -> Define a imagem como um mapa de imagem do lado do cliente. -> #nomeDoMapa
+
+        width -> Define a largura da imagem. -> Número
+    
+    -->
+
+    <img src="/tags/logo.png" alt="Logotipo da Hcode Treinamentos" width="100" height="100">
+
+    <a href="https://www.hcode.com.br">
+        <img src="/tags/logo.png" alt="Logotipo da Hcode Treinamentos" width="100" height="100">
+    </a>
+
+    <a href="/ismap">
+        <img src="/tags/logo.png" alt="Logotipo da Hcode Treinamentos" width="100" height="100" ismap>
+    </a>
+
+    <img src="/tags/logo.png" alt="Logotipo da Hcode Treinamentos" width="100" height="100" longdesc="#logoDescricao">
+
+    <div id="logoDescricao">
+        <h1>Hcode Treinamentos</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis eos quam possimus facilis dicta
+            reprehenderit? Labore repellat iste inventore cum. Reprehenderit ad commodi voluptatum placeat vel!
+            Laboriosam, ipsa quidem! Harum.
+        </p>
+
+    </div>
+</body>
+
+</html>

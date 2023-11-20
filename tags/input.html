@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag input</title>
+</head>
+
+<body>
+    <!--
+        Sobre a tag input:
+
+        Tag usada para definir um campo de entrada.
+        Um campo de entrada serve para o usuário inserir dados ou interagir com a página.
+        A tag pode variar de várias maneiras dependendo do atributo type.
+
+        accept -> Define o tipo de arquivo aceito para ser selecionado. (Se aplica apenas quando o atributo type 
+        tem o valor file) -> Extensão ou Tipo de Mídia
+
+        alt -> Define um texto alternativo. (Se aplica apenas quando o atributo type tem o valor image) -> Texto
+
+        autocomplete -> Define se o campo pode ter habilitado o auto completar do navegador ou não. -> on, off
+
+        autofocus -> Define o foco neste campo quando a página é carregada. -> on, off
+
+        checked -> Define se o campo está marcado/selecionado. (Se aplica apenas quando o atributo type 
+        tem o valor checkbox ou radio) -> checked
+
+        dirname -> Define o nome do campo que será enviado informando a direção do texto escrito. -> NomeDoInput.dir
+
+        disabled -> Define o campo como desabilitado. -> disabled
+
+        form -> Define qual o formulário que esse campo pertence. -> ID do formulário
+
+        formaction -> Define qual a URL de envio desse campo. (Se aplica apenas quando o atributo 
+        type tem o valor submit ou image) -> URL
+
+        formenctype -> Define qual o enctype do formulário ao enviar esse campo. (Se aplica apenas quando 
+        o atributo type tem o valor submit ou image) -> application/x-www-form-urlencoded, multipart/form-data, 
+        text/plain
+
+        formmethod -> Define qual será o método do formulário ao clicar neste botão. (Se aplica apenas quando 
+        o atributo type tem o valor submit ou image) -> get, post
+
+        formnovalidate -> Desativa a validação do formulário ao clicar neste botão.
+
+        formtarget -> Define qual será o target do formulário ao clicar neste botão. (Se aplica apenas quando 
+        o atributo type tem o valor submit ou image) -> _blank, _self, _parent, _top, nome do frame
+
+        height -> Define a altura do campo. (Se aplica apenas quando o atributo type tem o valor image) -> Número
+
+        list -> Define qual tag datalist está vinculada com este campo. -> ID do datalist
+
+        max -> Define um valor máximo. -> Número ou Data
+
+        maxlength -> Define um comprimento máximo de caracteres. -> Número
+
+        min -> Define um valor mínimo. -> Número ou Data
+
+        multiple -> Define se o usuário pode entrar com mais de uma valor neste campo. (Se aplica apenas 
+        quando o atributo type tem o valor file) -> multiple
+
+        name -> Define o nome do campo. -> Texto
+
+        pattern -> Define uma expressão regular para validação do campo. -> Expressão Regular
+
+        placeholder -> Define um texto de dica que descreve o valor esperado. -> Texto
+
+        readonly -> Define o campo como somente leitura. -> readonly
+
+        required -> Define o campo como obrigatório para envio do formulário. -> required
+        
+        size -> Define a largura, em caracteres do campo.  -> Número
+
+        src -> Define a fonte do arquivo. (Se aplica apenas quando o atributo type tem o valor image) -> URL
+
+        step -> Define o intervalo de número permitidos. (Se aplica apenas quando o atributo type tem o valor 
+        number) -> Número
+
+        type -> Define o tipo do campo. -> button, checkbox, color, date, datetime-local, 
+        email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, 
+        text, time, url, week
+
+        value -> Define o valor inicial do campo. -> Texto
+
+        width -> Define a largura do campo. (Se aplica apenas quando o atributo type tem o valor image) -> Número
+
+    -->
+
+    <form>
+        <input type="text" value="Marcos">
+        <input type="checkbox" name="option" checked value="1">
+        <input type="checkbox" name="option" value="2">
+        <input type="radio" name="gender" checked value="M">
+        <input type="radio" name="gender" value="F">
+        <input type="color" value="#FF0000">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="email" required>
+        <input type="submit" value="OK">
+        <input type="file" accept="image/png" multiple>
+        <input type="hidden" name="id" value="{{id}}">
+        <input type="month" value="Digite o mês e o ano">
+        <input type="number" step="2">
+        <input type="password">
+        <input type="reset">
+        <input type="button" value="Nona">
+        <input type="search">
+        <input type="tel" value="Digite o número de telefone">
+        <input type="time">
+        <input type="url" required>
+        <input type="week">
+        <input type="range" min="0" max="100" value="50">
+    </form>
+</body>
+
+</html>

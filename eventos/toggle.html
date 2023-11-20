@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: toggle</title>
+    <style>
+        video {
+            height: 80vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <details ontoggle="debug(event)">
+        <summary>Hcode</summary>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis minima iste totam perspiciatis laudantium
+            asperiores, commodi voluptatibus doloremque eveniet earum saepe. Quos mollitia unde doloribus nisi magni,
+            asperiores deserunt omnis.
+        </p>
+    </details>
+
+    <script>
+
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+
+    </script>
+</body>
+
+</html>

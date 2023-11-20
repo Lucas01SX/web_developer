@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Track</title>
+</head>
+
+<body>
+    <!-- 
+        sobre a tag track:
+        
+        Tag usada para definir uma faixa de texto em uma tag de mídia.
+        Normalmente usada para definir legendas em vídeos.
+
+        default -> Define se esta é a faixa selecionada por padrão. -> default
+
+        kind -> Define o tipo da faixa de texto. -> captions, chapters, descriptions, metadata, subtitles
+
+        label -> Define o rótulo da faixa de texto. -> NomeDoInput.dir
+
+        src -> Define a URL da fonte da faixa de texto. -> URL
+
+        srclang -> Define qual a linguagem dos dados da faixa de texto. Obrigatório para legendas. -> Código da Linguagem
+
+    -->
+
+    <video src="/tags/midias/AV1_trailer.mp4" controls width="800">
+        <track src="/tags/tracks/AV1_trailer_pt.vtt" label="Português (Brasil)" kind="subtitles" srclang="pt" default>
+        <track src="/tags/tracks/AV1_trailer_jp.vtt" label="Japonês" kind="subtitles" srclang="jp">
+    </video>
+
+
+</body>
+
+</html>

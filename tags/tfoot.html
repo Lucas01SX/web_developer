@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag tfoot</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+    <!-- 
+        sobre a tag tfoot:
+
+        Tag usada para agrupar o conteúdo do rodapé da tabela.
+        A tag é usada em conjunto com as tags tbody e tfoot.
+        Os navegadores podem usar esta definição para ativar a rolagem do corpo da tabela.
+        A tag deve ser filha de uma tag table.
+        A tag deve vir depois das tags thead e tbody.
+        A tag deve ter um ou mais tags tr dentro dela.
+        A tag não afeta visualmente a tabela, mas pode ser estilizada com CSS.
+
+    -->
+
+    <table>
+        <thead>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td colspan="2">A1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td rowspan="2">B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>C3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

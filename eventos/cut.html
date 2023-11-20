@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: cut</title>
+</head>
+
+<body>
+
+    <input type="text" oncut="debug(event)">
+
+    <p oncut="debug(event)">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus illo, fugit, error fuga esse id odio
+        omnis, eos facilis optio aliquam nulla tempore. Odit debitis temporibus corrupti veritatis pariatur facere.
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus illo, fugit, error fuga esse id odio
+        omnis, eos facilis optio aliquam nulla tempore. Odit debitis temporibus corrupti veritatis pariatur facere.
+    </p>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+</body>
+
+</html>

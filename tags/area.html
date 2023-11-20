@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag area</title>
+</head>
+
+<body>
+
+    <!--
+        Sobre a tag area:
+
+        Tag usada para definir áreas clicáveis em um mapa de imagem.
+        Esta tag deve ser sempre filha de uma tag map.
+
+        alt -> Define um texto alternativo para a imagem. -> Texto
+
+        coords -> Define as coordenadas da área. -> x1,y1,x2,y2 para shape rect
+        x,y,raio para shape circle
+        x1,y1,x2,y2,...,xn,yn para shape poly
+
+        download -> Usado para forçar o download do destino do link. -> Se for definido um texto no valor, 
+        o mesmo será usado como nome do arquivo que será baixado no download.
+
+        href -> Define qual o endereço do link de destino. -> URL
+
+        hreflang -> Define qual a linguagem do link de destino. -> Código de Linguagem
+
+        media -> Define qual a mídia ou dispositivo do link de destino. -> Media Query
+
+        rel -> Define qual a relação do documento atual e o de destino. -> alternate, author, bookmark, 
+        external, help, license, next, nofollow, noreferrer, noopener, prev, search, tag
+
+        shape -> Define uma forma para a área. -> default, rect, circle, poly
+
+        target -> Define onde o link deverá ser aberto. -> _blank, _parent, _self, _top, Nome de um Frame
+
+        type -> Define o tipo de mídia do link de destino. -> Tipo de Mídia (MIME type)
+    -->
+
+
+    <img src="/tags/imagens/logo.png" alt="Logo da Hcode" usemap="#mapa-logo">
+
+    <map name="mapa-logo">
+        <area shape="circle" coords="211,263,15" href="https://hcode.com.br" alt="Olho Esquerdo">
+        <area shape="circle" coords="301,263,15" href="https://youtube.com/hcodebrasil" alt="Olho Direito">
+
+        <area shape="rect" coords="0,0,20,20" href="https://github.com/hcodebrasil" alt="Github da hcode">
+    </map>
+
+</body>
+
+</html>

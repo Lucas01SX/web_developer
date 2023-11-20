@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Source</title>
+</head>
+
+<body>
+    <!-- 
+
+        sobre a tag source:
+
+        Tag usada para definir uma fonte de mídia.
+        Usada junto com as tags audio, video e picture.
+
+        src -> Define a fonte externa do source. -> URL
+
+        srcset -> Define uma fonte em situações diferentes. -> URL
+
+        media -> Define em que tipo de mídia essa fonte de dados se aplica. -> Consulta de Mídia
+
+        sizes -> Define tamanhos diferentes.
+
+        type -> Define o tipo de mídia do arquivo. -> Tipo de mídia
+
+    -->
+
+    <audio controls>
+        <source src="/tags/How_it_Began.mp3" type="audio/mpeg">
+        <source src="/tags/How_it_Began.ogg" type="audio/ogg">
+    </audio>
+
+    <picture>
+        <source srcset="logo.png" media="(min-width: 512px)">
+        <source srcset="logo256.png" media="(min-width: 256px)">
+        <img src="logo64.png" alt="Logo da Hcode">
+    </picture>
+
+
+</body>
+
+</html>

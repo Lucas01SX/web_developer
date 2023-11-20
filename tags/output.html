@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag output</title>
+</head>
+
+<body>
+
+    <!--
+        Sobre a tag output:
+        Tag usada para mostrar o resultado de um cálculo.
+
+        for -> Define a relação entre o resultado e os elementos usados para o cálculo. -> ID do elemento
+
+        form -> Define qual o formulário que esse campo pertence. -> ID do formulário
+
+        name -> Define o nome do elemento. -> Texto
+    -->
+
+    <form oninput="c.value = parseInt(a.value) + parseInt(b.value)">
+        <input type="range" id="a" value="0" min="0" max="10">
+        +
+        <input type="number" id="b" value="0">
+        =
+        <output name="c" for="a b">0</output>
+    </form>
+
+</body>
+
+</html>

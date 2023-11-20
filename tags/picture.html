@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag picture</title>
+</head>
+
+<body>
+    <!--
+        sobre a tag picture:
+
+        Tag usada para definir mais de uma fonte de imagem.
+        Normalmente usada para mostrar imagens de acordo com o tamanho da tela.
+        Esta tag deve ter uma tag img e uma ou mais tags source.
+
+    -->
+
+    <picture>
+        <source srcset="logo.png" media="(min-width: 512px)">
+        <source srcset="logo256.png" media="(min-width: 256px)">
+        <img src="logo64.png" alt="Logo da Hcode">
+
+    </picture>
+</body>
+
+</html>
